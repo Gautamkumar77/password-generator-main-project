@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div id="inputbox">
+        <input type="text" placeholder="P4$5WOrD!" id="inputpassbox" />
+        <img src="Vectorimg1.png" alt="" />
+      </div>
+      <div id="passdiv">
+        <div class="row">
+          <p>Character Length</p>
+          <span id="slidervalue">0</span>
+        </div>
+        <input type="range" min="1" max="10" id="inputslider" value="8" />
+
+        <div class="row">
+          <input type="checkbox" name="lowerCase" id="lowerCase" />
+          <label for="lowerCase">Include Lowercase letters</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" name="upperCase" id="upperCase" />
+          <label for="upperCase">Include Uppercase letters</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" name="numbers" id="numbers" />
+          <label for="numbers">Include Numbers</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" name="symbols" id="symbols" />
+          <label for="symbols">Symbols</label>
+        </div>
+        <div id="strengthbar">
+          <p>STRENGTH</p>
+          <div id="bardiv">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <button id="btn">GENERATE&nbsp;-></button>
+        <script src="script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
